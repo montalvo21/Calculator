@@ -1,0 +1,319 @@
+/*Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: linear-gradient(
+    260deg,
+    hsl(279deg 67% 41%) 0%,
+    hsl(279deg 67% 40%) 7%,
+    hsl(279deg 67% 39%) 14%,
+    hsl(279deg 67% 38%) 21%,
+    hsl(279deg 67% 38%) 28%,
+    hsl(279deg 67% 37%) 35%,
+    hsl(279deg 67% 36%) 42%,
+    hsl(279deg 67% 35%) 49%,
+    hsl(279deg 67% 34%) 56%,
+    hsl(279deg 67% 34%) 63%,
+    hsl(279deg 67% 33%) 70%,
+    hsl(279deg 67% 32%) 77%,
+    hsl(279deg 67% 31%) 85%,
+    hsl(279deg 67% 31%) 92%,
+    hsl(279deg 67% 30%) 100%
+  );
+}
+
+header .logo {
+  position: relative;
+  max-width: 90px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  position: relative;
+}
+header ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  transition: 0.3s ease-in-out;
+}
+header ul li a:hover:before {
+  width: 100%;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+.content .textBox h2 {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.content .textBox h2 span {
+  font-size: 2em;
+}
+.content .textBox p {
+  color: #fff;
+  font-size: 0.9em;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  color: #111;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.content .textBox a:hover {
+  opacity: 0.8;
+}
+.content .imageBox {
+  width: 600px;
+  display: flex;
+  padding-right: 50px;
+  justify-content: flex-end;
+}
+.content .imageBox img {
+  max-width: 200px;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 40px;
+}
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: inline-block;
+  margin: 5px 0;
+}
+.sci li a:hover,
+.sci li a:focus {
+  opacity: 0.5;
+}
+
+/* Inico de las clases del formulario */
+
+form {
+  width: max(40%, 300px);
+  margin: auto;
+  height: auto;
+  padding: 40px;
+
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 20px;
+  margin-top: 7%;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    260deg,
+    hsl(279deg 67% 41%) 0%,
+    hsl(279deg 67% 40%) 7%,
+    hsl(279deg 67% 39%) 14%,
+    hsl(279deg 67% 38%) 21%,
+    hsl(279deg 67% 38%) 28%,
+    hsl(279deg 67% 37%) 35%,
+    hsl(279deg 67% 36%) 42%,
+    hsl(279deg 67% 35%) 49%,
+    hsl(279deg 67% 34%) 56%,
+    hsl(279deg 67% 34%) 63%,
+    hsl(279deg 67% 33%) 70%,
+    hsl(279deg 67% 32%) 77%,
+    hsl(279deg 67% 31%) 85%,
+    hsl(279deg 67% 31%) 92%,
+    hsl(279deg 67% 30%) 100%
+  );
+  box-shadow: 14px 14px 20px #a8aaab, -14px -14px 20px white;
+}
+
+.imgLogo {
+  width: 90%;
+  margin: auto;
+}
+
+labels {
+  color: rgb(135, 131, 131);
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.comentario {
+  color: rgb(141, 137, 137);
+  margin: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Selección de día y hora */
+
+h2 {
+  color: rgb(141, 137, 137);
+  font-size: 0.7em;
+  margin: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: 0 !important;
+  background: white;
+  color: rgb(141, 137, 137);
+}
+
+/* #c582f1; */
+
+input {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  outline: #8633b9ea;
+  color: rgb(135, 131, 131);
+}
+
+.select {
+  position: relative;
+  display: flex;
+  height: 25px;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+select {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Transition */
+.select:hover::after {
+  color: Gainsboro;
+}
+
+.form-signin-heading,
+.checkbox {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  color: rgb(135, 131, 131);
+  margin-left: 10px;
+}
+
+.checkbox {
+  font-weight: normal;
+}
+
+/* Selección de día y hora */
+
+button {
+  margin-top: 40px;
+  border-radius: 30px;
+  height: 40px;
+  background: rgb(99, 92, 108);
+  border: none;
+  color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  border: 0.3px all 1s ease;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  color: #8633b9ea;
+}
+
+/* Fin de las clases del formulario */
